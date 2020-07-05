@@ -6,6 +6,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="instructions.css" rel="stylesheet" type="text/css" />
     <title>WebTech Exam - Q3</title>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
   </head>
   <body>
     <h1>Counting Down...</h1>
@@ -19,11 +20,37 @@
         10 in black color and start a new round of counting down.
       </p>
       <div class="question-second">
-        <p id="number">10</p>
+        <p id="result"></p>
         <p>
           <button>Count Down</button>
         </p>
       </div>
     </div>
+
+    <script>
+      let counter = 11; // starting from you
+      const result = document.getElementById("result"); //it will show the counter here
+      let finished = false; // at the beginning it is not finished
+
+      function countDown() {
+        if (counter > 0) {
+            counter = counter - 1; //decreased by 1
+          result.innerText = counter;
+        } else {
+          result.style.color = "red";
+          finished = true;
+        }
+        if (finished === false) { // not finished
+            console.log(counter);
+
+
+          setTimeout(countDown, 1000); //repeat every second
+        }
+      }
+
+      document.querySelector("button").onclick = countDown;
+
+
+    </script>
   </body>
 </html>
