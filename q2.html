@@ -51,6 +51,24 @@ function three(){
 
 document.getElementById("image-two").ondblclick = three;
 
+//trying to get it into one function 
+function gordonHayward(){
+        if(imageOne.onclick){
+            header.innerText = "Gordon Hayward is Serious";
+      imageOne.style.display = "inline";
+      imageTwo.style.display = "none";
+        } else if(imageTwo.onclick){
+          header.innerText = "Gordon Hayward is Smiling";
+      imageOne.style.display = "none";
+      imageTwo.style.display = "inline";
+        } else if(imageTwo.ondblclick){
+          header.innerText = "Let's Go Celtics";
+      imageOne.style.display = "inline";
+      imageTwo.style.display = "inline";
+        }
+                }
+        
+
   </script>
 </body>
 </html>
