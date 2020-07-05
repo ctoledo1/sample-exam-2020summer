@@ -6,6 +6,7 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
   <link href="instructions.css" rel="stylesheet" type="text/css">
   <title>WebTech Exam - Q4</title>
+  <link rel="stylesheet" type="text/css" href="nav.css"/>
   <script>
     const shapes = ['C', 'D', 'H', 'S'];
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
@@ -21,12 +22,29 @@
       through ten is their pip value (2 through 10). Face cards (Jack, Queen, and King) are all worth ten. To simplify
       this game, Ace is worth one. </p>
     <div class="question-second">
-      <img alt="card-1" height="100" src="images/green_back.png">
-      <img alt="card-2" height="100" src="images/green_back.png">
-      <img alt="card-3" height="100" src="images/green_back.png">
+      <img id="card-1" alt="card-1" height="100" src="images/green_back.png">
+      <img id="card-2" alt="card-2" height="100" src="images/green_back.png">
+      <img id="card-3" alt="card-3" height="100" src="images/green_back.png">
       <p id="result">You are Not Busted.</p>
-      <button>Hit</button>
+      <button id="hit-btn">Hit</button>
     </div>
   </div>
+<script>
+
+  const result = document.getElementById("hit-btn")
+
+  function changeResult(){
+    if totalSum >21{
+      result.innerHTML = "You Are Busted!";
+    } else {
+      "You Are Not Busted!"
+    }
+  }
+  document.getElementById("hit-btn").onclick = changeResult;
+
+</script>
+  
+
+ 
 </body>
 </html>
