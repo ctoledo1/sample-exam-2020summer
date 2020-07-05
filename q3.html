@@ -40,16 +40,17 @@
           result.style.color = "red";
           finished = true;
         }
-        if (finished === false) { // not finished
+        if (finished === false) { //not finished
             console.log(counter);
-
-
           setTimeout(countDown, 1000); //repeat every second
+          counter = counter + 10; 
         }
+        
       }
 
       document.querySelector("button").onclick = countDown;
 
+     
 
     </script>
   </body>

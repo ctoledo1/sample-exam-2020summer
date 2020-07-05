@@ -1,2 +1,47 @@
-body {
+
+body{
+    margin: 0px;
 }
+
+#logo {
+    height: 70px;
+    width: 70px;
+    float: left;
+    padding-left: 200px;
+    padding-right: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#navbar{
+    margin: 0px;
+    background-color: #008348;
+    list-style-type: none;
+    overflow: hidden;
+    float: center;
+}
+li{
+    float: left;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+li a{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left:  15px;
+    display: block;
+    text-align: center;
+    
+}
+li a:hover {
+    background-color: white;
+    color: #008348;
+}
+
+
+
