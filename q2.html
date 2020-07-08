@@ -33,28 +33,28 @@
       const imageTwo = document.getElementById("image-two");
 
       function one() {
-        header.innerText = "Gordon Hayward is Serious";
+        header.innerHTML = "Gordon Hayward is Serious";
         imageOne.style.display = "inline";
         imageTwo.style.display = "none";
       }
 
-      document.getElementById("image-one").onclick = one;
+      imageOne.onclick = one;
 
       function two() {
-        header.innerText = "Gordon Hayward is Smiling";
+        header.innerHTML = "Gordon Hayward is Smiling";
         imageOne.style.display = "none";
         imageTwo.style.display = "inline";
       }
 
-      document.getElementById("image-two").onclick = two;
+      imageTwo.onclick = two;
 
       function three() {
-        header.innerText = "Let's Go Celtics";
+        header.innerHTML = "Let's Go Celtics";
         imageOne.style.display = "inline";
         imageTwo.style.display = "inline";
       }
 
-      document.getElementById("image-two").ondblclick = three;
+      header.ondblclick = three;
 
       /*trying to get it into one function 
 function gordonHayward(){
