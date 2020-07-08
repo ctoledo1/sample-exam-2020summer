@@ -16,106 +16,112 @@
         border-color: #ececec;
         border-style: solid;
         text-align: center;
+        font-size: 10px;
+        font-family: "roboto", sans-serif;
       }
-      .column-1 {
+      tr {
         height: 160px;
+      }
+      td:first-child {
         width: 150px;
         background-color: #e1ece4;
       }
-      .column-2 {
-        height: 160px;
-        width: 150px;
-        font-size: 10px;
+    
+      td:nth-child(2) {
+        width: 50px;
       }
-      .column-3 {
-        height: 160px;
+
+      td:nth-child(3) {
+        text-align: left;
+        width: 60px;
+      }
+
+      td:nth-child(4) {
         width: 200px;
-        font-size: 22px;
       }
-      .column4 {
-        height: 160px;
-        width: 265px;
-        font-size: 10px;
+      td:nth-child(5) {
+        width: 260px;
       }
-      .lower-case {
-        font-size: 10px;
-      }
+
       .capital {
         font-size: 22px;
       }
-      .vs {
-        padding-left: 10px;
-        padding-top: 37px;
-        padding-bottom: 37px;
-        padding-right: 0px;
-        float: left;
-      }
-      video {
-        height: 150px;
-        width: 260px;
-      }
+      
       #dal-logo {
         height: 60px;
-        float: right;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 0px;
+      
       }
       #was-logo {
         height: 60px;
-        float: right;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 0px;
       }
     </style>
   </head>
   <body>
-    <ul id="navbar">
-      <img src="images/celtics.svg" alt="logo" title="logo" id="logo" />
-      <li><a class="active" href="index.html">Schedule</a></li>
-      <li><a class="active" href="q2.html">Gordon</a></li>
-      <li><a class="active" href="q3.html">Counting Down</a></li>
-      <li><a class="active" href="q4.htm">Blackjack</a></li>
-    </ul>
-    <br />
-
+    <div class="topnav">
+      <div class="topnav-left">
+        <img src="images/celtics.svg" alt="logo" title="logo" id="logo"/>
+      </div>
+      <div class="topnav-right">
+        <ul class="menu">
+          <li><a class="active" href="index.html">Schedule</a></li>
+          <li><a class="active" href="q2.html">Gordon</a></li>
+          <li><a class="active" href="q3.html">Counting Down</a></li>
+          <li><a class="active" href="q4.html">Blackjack</a></li>
+        </ul>
+      </div>
+    </div>
     <table>
       <tr>
-        <td class="column-1">
-          <p class="lower-case">SATURDAY</p>
-          <p class="capital">NOV 9</p>
-          <p class="lower">7:30 PM</p>
+        <td>
+          SATURDAY
+          <br />
+          <span class="capital">NOV 9</span>
+          <br />
+          7:30 PM
         </td>
-        <td class="column-2">
-          <p class="vs">VS</p>
-
+        <td>
+          VS
+        </td>
+        <td>
           <img id="dal-logo" src="images/DAL_logo.svg" />
         </td>
-        <td class="column-3">W 116 - 106</td>
-        <td class="column-4">
-          <iframe width="260" height="150" src="https://www.youtube.com/embed/pg0uLr1xeYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+        <td>
+          <span class="capital">W 116 - 106</span>
+        </td>
+        <td>
+          <iframe
+            width="260"
+            height="150"
+            src="https://www.youtube.com/embed/pg0uLr1xeYM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </td>
       </tr>
       <tr>
-        <td class="column-1">
-          <p class="lower-case">WEDNESDAY</p>
-          <p class="capital">NOV 13</p>
-          <p class="lower">7:30 PM</p>
+        <td>
+          WEDNESDAY
+          <br />
+          <span class="capital">NOV 13</span>
+          <br />
+          7:30 PM
         </td>
-        <td class="column-2">
-          <p class="vs">VS</p>
+        <td>
+          VS
+        </td>
+        <td>
           <img id="was-logo" src="images/WAS_logo.svg" />
         </td>
-        <td class="column-3">W ? - ?</td>
-        <td class="column-4">
+        <td>
+          <span class="capital">W ? - ?</span>
+        </td>
+        <td>
           TD Garden, Boston, MA
           <br />
           NBC Sports Boston
           <br />
           98.5 The Sports Hub
-          <br />
         </td>
       </tr>
     </table>
